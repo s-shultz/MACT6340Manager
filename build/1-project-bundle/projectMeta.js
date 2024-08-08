@@ -1,6 +1,6 @@
 export const projectInfo = {
   projectName: "Galaxy Generator",
-  artistsPayoutWallet: "0xBE87e56F6eFa57E7941835721B0DD1525043E63a",
+  artistsPayoutWallet: "0x742C7e3861E37309e7015bCd174235a43C3ABcd8",
   numberOfEditions: 13,
   releaseDate: "2024-08-10 21:00:00",
   websiteProjectDescription:
@@ -14,7 +14,7 @@ export const projectInfo = {
     "A galaxy rendered with THREEjs.",
   openSeaCollectionImage: "",
   openSeaCollectionSeller_fee_basis_points: 500,
-  openSeaCollectionFee_recipient: "0xBE87e56F6eFa57E7941835721B0DD1525043E63a",
+  openSeaCollectionFee_recipient: "0x742C7e3861E37309e7015bCd174235a43C3ABcd8",
   tokenDescriptionText:
     "One of the gorgeous galaxies that exists from the Galaxy collection.",
 };

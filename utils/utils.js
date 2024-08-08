@@ -312,18 +312,18 @@ async function deploy() {
         royaltyArtist: projectInfo.openSeaCollectionFee_recipient,
         royaltyBasis: projectInfo.openSeaCollectionSeller_fee_basis_points,
     };
-    const DGSCreativeNFTContractFactory = await ethers.getContractFactory(
-        "DGSCreativeNFTContract"
+    const SSDesignNFTContractFactory = await ethers.getContractFactory(
+        "SSDesignNFTContract"
     );
     // deploy
-    const DGSCreativeNFTContract = await DGSCreativeNFTContractFactory.deploy(
+    const SSDesignNFTContract = await SSDesignNFTContractFactory.deploy(
         args.mint_price,
         args.max_tokens,
         args.base_uri,
         args.royaltyArtist,
         args.royaltyBasis
     );
-    await DGSCreativeNFTContract.waitForDeployment(
+    await SSDesignNFTContract.waitForDeployment(
         args.mint_price,
         args.max_tokens,
         args.base_uri,
@@ -331,8 +331,8 @@ async function deploy() {
         args.royaltyBasis
     );
     console.log("Waiting for block verifications...");
-    await DGSCreativeNFTContract.deploymentTransaction().wait(30);
-    contractAddress = await DGSCreativeNFTContract.getAddress();
+    await SSDesignNFTContract.deploymentTransaction().wait(30);
+    contractAddress = await SSDesignNFTContract.getAddress();
     console.log(`Contract deployed to ${contractAddress}`);
     // verify
     if (
